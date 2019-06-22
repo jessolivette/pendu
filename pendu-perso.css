@@ -1,0 +1,165 @@
+
+/* ----------- body as flex container -------------*/
+#container {
+	background-color: #000;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/* ------------- main flex containers --------------*/
+#main-container1 {
+	/* styling */
+	background-color: #FFFFFFCC;
+	flex-basis: 69%;
+	border-radius: 10px;
+	/* make it a container too */
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#main-container2 {
+	background-color: #FFFFFFCC; /* styling */
+	flex-basis: 26%; /* flex properties */
+	border-radius: 10px;
+	display: flex; /* make it a container too */
+	position: relative;
+}
+
+/* ------- user interface flex containers -----------*/
+ .cells {
+	margin: 8px; /* styling */
+	box-shadow: 1px 1px 2px 2px darkgrey;
+	border-radius: 10px;
+	flex-basis: 20%; /* flex properties */
+	display: flex; /* make it a container too */
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.wordCell {
+	margin: 8px; /* styling */
+	box-shadow: 1px 1px 2px 2px darkgrey;
+	border-radius: 10px;
+	flex-basis: 20%; /* flex properties */
+	display: flex; /* make it a container too */
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+/*------------------ flex elements ------------------*/
+#hide {
+	visibility: hidden;
+}
+
+.overview {
+	flex-basis: 45%;
+}
+
+.letter {
+	width: 50px;
+	/* border: 1px dotted black; */
+	text-align: center;
+	font-size: 35px;
+}
+
+.userInput {
+	margin: 8px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.user {
+	margin: 8px 35px 8px 8px;
+	border: 1px solid black;
+}
+
+/*----- draw the flower pure css, interactive image -----*/
+#petal1 {
+	width: 40px;/* image layout */
+	height: 40px;
+	background-color: #f44289;
+	border-radius: 50% 0 0 50%;
+	transform: rotate(305deg);
+	position: absolute; /* responsive position */
+	top: 41%;
+	left: 39%;
+}
+
+#petal2 {
+	width: 40px;/* image layout */
+	height: 40px;
+	background-color: #f44289;
+	border-radius: 50% 0 0 50%;
+	position: absolute;/* responsive position */
+	top: 31%;
+	left: 35%;
+}
+
+#petal3 {
+	width: 40px;/* responsive position */
+	height: 40px;
+	background-color: #f44289;
+	border-radius: 50% 0 0 50%;
+	transform: rotate(68deg);
+	position: absolute;/* responsive position */
+	top: 22%;
+	left: 40%;
+}
+
+#petal4 {
+	width: 40px;/* responsive position */
+	height: 40px;
+	background-color: #f44289;
+	border-radius: 50% 0 0 50%;
+	transform: rotate(113deg);
+	position: absolute;/* responsive position */
+	top: 22%;
+	left: 48%;
+}
+
+#petal5 {
+	width: 40px;/* responsive position */
+	height: 40px;
+	background-color: #f44289;
+	border-radius: 50% 0 0 50%;
+	transform: rotate(180deg);
+	position: absolute;/* responsive position */
+	top: 31%;
+	left: 54%;
+}
+
+#petal6 {
+	width: 40px;/* responsive position */
+	height: 40px;
+	background-color: #f44289;
+	border-radius: 50% 0 0 50%;
+	transform: rotate(225deg);
+	position: absolute;/* responsive position */
+	top: 41%;
+	left: 50%;
+}
+
+#heart {
+	width: 15%;/* responsive position */
+	height: 15%;
+	background-color: #f9e613;
+	border-radius: 50%;
+	position: absolute;/* responsive position */
+	top : 30%;
+	left: 42%;
+}
+
+#stem {
+	width: 2%;/* responsive position */
+	height: 40%;
+	background-color: #44af0a;
+	border-radius: 8px;
+	position: absolute;/* responsive position */
+	top: 45%;
+	left: 48%;
+}
