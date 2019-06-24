@@ -5,7 +5,6 @@
 	<meta charset="utf-8">
 	<title> Jeu Du Pendu responsive design </title>
 	<link rel="stylesheet" type="text/css" href="pendu-perso.css">
-	<script type="text/javascript" src="pensu-perso.js"></script>
 </head>
 
 <body id="container">
@@ -26,8 +25,8 @@
 		</div>
 		<div class="wordCell">
 			<div class="user">
-				<input class="userInput" type="text" name="letter"></input>
-				<button class="userInput"> ? </button>
+				<input id="suggestedLetter" class="userInput" type="text" ></input>
+				<button id="btn" class="userInput"> ? </button>
 			</div>
 			<div class="user">
 				<img src="content.svg">
@@ -49,5 +48,6 @@
 		<div id="stem"></div>
 	</div>
 
+	<script type="text/javascript" src="pendu-perso.js"></script>
 </body>
 </html>
