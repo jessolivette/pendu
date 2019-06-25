@@ -1,7 +1,8 @@
 
 /* ----------- body as flex container -------------*/
 #container {
-	background-color: #000;
+	background-image: url("https://images.freeimages.com/images/large-previews/ad5/waterdrops-1-1476034.jpg");
+    background-size: cover;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -70,8 +71,8 @@
 
 .userInput {
 	margin: 8px;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	border: 1px solid black;
 	border-radius: 5px;
 }
