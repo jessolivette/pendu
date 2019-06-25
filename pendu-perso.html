@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<title> Jeu Du Pendu responsive design </title>
 	<link rel="stylesheet" type="text/css" href="pendu-perso.css">
+	<script type="text/javascript" src="pendu-perso.js" defer></script>
 </head>
 
 <body id="container">
@@ -12,8 +13,8 @@
 	<!-- left container: infos current game, word display, user input ... -->
 	<div id="main-container1">
 		<div class="cells">
-			<p class="overview"> Partie 1 </p>
-			<p class="overview"> Score : <span id="score"></span></p>
+			<p id="partie" class="overview"> Partie 1 </p>
+			<p id="score" class="overview"> Score : <span id="score"></span></p>
 		</div>
 		<div class="wordCell">
 			<p class="letter"></p>
@@ -33,7 +34,7 @@
 			</div>
 			<div id="reminder" class="user"> reminder </div>
 		</div>
-		<div id="hide" class="cells"><p id="hide">  LEVEL UP !  </p></div>
+		<div class="cells"><p id="hide"><b>  LEVEL UP !  </b></p></div>
 	</div>
 
 	<!-- right container: image management -->
@@ -48,6 +49,5 @@
 		<div id="stem"></div>
 	</div>
 
-	<script type="text/javascript" src="pendu-perso.js"></script>
 </body>
 </html>
