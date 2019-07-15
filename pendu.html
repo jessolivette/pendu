@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Jeu Du Pendu </title>
+	<link rel="stylesheet" type="text/css" href="pendu.css">
+	<script type="text/javascript" src="pendu.js" defer></script>
+</head>
+
+<body id="container">
+
+	<!-- left container: infos current game, word display, user input ... -->
+	<div id="main-container1">
+		<div class="cells">
+			<p id="partie" class="overview"> Partie 1 </p>
+			<p id="score" class="overview"> Score : <span id="score"></span></p>
+		</div>
+		<div class="wordCell">
+			<p class="letter"></p>
+			<p class="letter"></p>
+			<p class="letter"></p>
+			<p class="letter"></p>
+			<p class="letter"></p>
+			<p class="letter"></p>
+		</div>
+		<div class="wordCell">
+			<div class="user">
+				<input id="suggestedLetter" class="userInput" type="text" ></input>
+				<button id="btn" class="userInput"> ? </button>
+			</div>
+			<div class="user">
+				<img src="confused.svg" alt="" id="img">
+			</div>
+			<p id="reminder" class="user"></p>
+		</div>
+		<div class="cells"><p id="hide"><b>  LEVEL UP !  </b></p></div>
+	</div>
+
+	<!-- right container: image management -->
+	<div id="main-container2">
+		<div id="petal1"></div>
+		<div id="petal2"></div>
+		<div id="petal3"></div>
+		<div id="petal4"></div>
+		<div id="petal5"></div>
+		<div id="petal6"></div>
+		<div id="heart"></div>
+		<div id="stem"></div>
+	</div>
+
+</body>
+</html>
