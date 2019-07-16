@@ -80,6 +80,10 @@
 	margin: 8px 35px 8px 8px;
 }
 
+#reminder {
+	min-width: 80px;
+}
+
 /*----- draw the flower pure css, interactive image -----*/
 #petal1 {
 	width: 40px;
@@ -170,4 +174,15 @@
 #img {
 	width: 45px;
 	height: 45px;
+}
+
+/* class added with js to make petals desapear */
+.vanish {
+	animation: vanish 1s ease-in 0s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes vanish {
+	from {background-color: #f44289;}
+	to {background-color: #f4428900;}
 }

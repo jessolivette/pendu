@@ -46,23 +46,25 @@ function check () {
 			letter[i].innerHTML = words[index].w[i];
 			img.setAttribute("src", "happy.svg");
 		}
+	} // end of for loop	
 		
-		// happen when all letters are filled
-		if (letter[0].innerHTML !== "" && letter[1].innerHTML !== "" && letter[2].innerHTML !== "" && letter[3].innerHTML !== "" && letter[4].innerHTML !== "" && letter[5].innerHTML !== "") {
+	// happen when all letters are filled
+	if (letter[0].innerHTML !== "" && letter[1].innerHTML !== "" && letter[2].innerHTML !== "" && letter[3].innerHTML !== "" && letter[4].innerHTML !== "" && letter[5].innerHTML !== "") {
 		index++;
 		partie++;
 		p.innerHTML = "Partie " + partie; 
 		score+=4;
 		s.innerHTML = "Score : " + score;
 		show.style.visibility = "visible";
+		reminder.innerHTML = "";
 
-			for (var j=0; j<6; j++) {
-				letter[j].innerHTML = "";
-			} // end of for loop2
-		} // end of if statement
-	} // end of for loop1
-
+		for (var j=0; j<6; j++) {
+			letter[j].innerHTML = "";
+		} // end of for loop
+	} // end of if statement
+	
 	if (partie === 6) {
+		alert("YOU WIN !!");
 		document.location.reload(true);
 	}
 
@@ -76,14 +78,51 @@ function check () {
 
 function handleError () {
 
+	// reminder for wrong letters
+	var reminder = document.getElementById("reminder"); 
+
 	wrong++; // count errors
 	reminder.innerHTML = sL; // add letters in reminder.
 	img.setAttribute("src", "suspicious.svg");
 
+	animation();
+
 	if ( wrong === 6 ) {
+		alert ("YOU LOOSE !");
 		document.location.reload(true);
 	}
 
+}
+
+function animation () {
+
+	//select petals for animation
+	var petal1 = document.getElementById("petal1");
+	var petal2 = document.getElementById("petal2");
+	var petal3 = document.getElementById("petal3");
+	var petal4 = document.getElementById("petal4");
+	var petal5 = document.getElementById("petal5");
+	var petal6 = document.getElementById("petal6");
+
+		// animation for error.
+	if (wrong === 1) {
+		petal1.classList.add("vanish");
+	}
+	else if (wrong === 2) {
+		petal2.classList.add("vanish");
+	}
+	else if (wrong === 3) {
+		petal3.classList.add("vanish");
+	}
+	else if (wrong === 4) {
+		petal4.classList.add("vanish");
+	}
+	else if (wrong === 5) {
+		petal5.classList.add("vanish");
+	}
+	else if (wrong === 6) {
+		petal6.classList.add("vanish");
+	}
 }
 
 };
